@@ -1,0 +1,4 @@
+--protected
+--embed-mixins
+--markup markdown
+--files LICENSE.txt,CHANGELOG.md,README.md
