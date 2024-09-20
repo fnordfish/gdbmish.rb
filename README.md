@@ -31,6 +31,8 @@ gem install gdbmish
 
 ## Usage
 
+* API documentation is available at [rubydoc.info](https://www.rubydoc.info/gems/gdbmish)
+
 ```ruby
 require 'gdbmish'
 
