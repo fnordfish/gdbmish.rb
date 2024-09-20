@@ -38,8 +38,8 @@ require 'gdbmish'
 io = StringIO.new
 dumper = Gdbmish::Dump::Ascii.new(file: "test.db", uid: "1000", user: "ziggy", gid: "1000", group: "staff", mode: 0o640)
 dumper.dump(io) do |dump|
-    dump.push("some_key", "Some Value")
-    dump.push("otherKey", "Other\nValue")
+  dump.push("some_key", "Some Value")
+  dump.push("otherKey", "Other\nValue")
 end
 
 io.rewind
@@ -126,7 +126,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/fnordfih/gdbmish.rb. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/fnordfih/gdbmish.rb/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/fnordfih/gdbmish.rb>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/fnordfih/gdbmish.rb/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
