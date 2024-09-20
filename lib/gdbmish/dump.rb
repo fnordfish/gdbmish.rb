@@ -80,6 +80,13 @@ module Gdbmish
         @mode = mode
       end
 
+      # Creates a new dump file structure. Either into a given *io* or a new `String`.
+      #
+      # When *data* is given, its key/value pairs are pushed onto the dump. Key/value
+      # objects are expected to respond to `#to_s`.
+      #
+      # When a block is given, an {Appender} is yielded to push key/value pairs onto the dump.
+      #
       # @overload dump(io)
       #   Dump only the header and footer
       #   @param io [IO] The IO to dump to
