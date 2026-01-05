@@ -14,6 +14,7 @@ jobs:
       matrix:
         os: ["ubuntu-latest", "macos-latest"]
         ruby:
+          - '4.0'
           - '3.4'
           - '3.3'
           - '3.2'
@@ -42,7 +43,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.3'
+        ruby-version: '4.0'
         bundler-cache: true
     - name: Standard
       run: bundle exec standardrb
